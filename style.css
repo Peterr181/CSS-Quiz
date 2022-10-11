@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-size: 1.6rem;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background: #000046; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #000046,
+    #1cb5e0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #000046,
+    #1cb5e0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.question {
+  margin-bottom: 1.6rem;
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 1.2rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-left: 1.3rem;
+  padding-bottom: 2rem;
+  font-size: 0.8rem;
+}
+
+.quiz__container {
+  width: 600px;
+  -webkit-box-shadow: 0px 0px 10px 3px rgba(130, 130, 130, 1);
+  -moz-box-shadow: 0px 0px 10px 3px rgba(130, 130, 130, 1);
+  box-shadow: 0px 0px 10px 3px rgba(130, 130, 130, 1);
+  background-color: #fff;
+  overflow: hidden;
+  z-index: 1500;
+
+  /* animation: leftToRight;
+  animation-duration: 3s;
+  animation-delay: 1s; */
+}
+
+.quiz__content {
+}
+
+.loader__wrapper {
+  background-color: #7cb9e8;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 4000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 40%;
+  height: 80%;
+}
+
+.btn {
+  border: none;
+  display: block;
+  background-color: #7cb9e8;
+  width: 100%;
+  padding: 1.3rem;
+
+  cursor: pointer;
+  transition: all 0.3s;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.btn:hover {
+  background-color: #04adc4;
+}
+
+.quiz__content {
+  padding: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.ending__container {
+  background-color: #7cb9e8;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.6rem;
+  animation: leftToRight;
+  animation-duration: 1s;
+}
+
+.lastBtn {
+  border: none;
+  padding: 0.8rem;
+  border-radius: 11px;
+  background-color: #6050dc;
+  z-index: 5000;
+  transform: translateY(150px);
+  cursor: pointer;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.6rem;
+  transition: all 0.3s;
+}
+.lastBtn:hover {
+  background-color: #add8e6;
+  color: #6050dc;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes leftToRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}

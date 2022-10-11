@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <div class="loader__wrapper">
+      <img src="giphy.gif" alt="giphyimg" class="image" />
+    </div>
+    <div class="ending__container hidden">asdadadasd</div>
+    <button class="lastBtn hidden">Try Again!</button>
+    <div class="quiz__container" id="quiz">
+      <div class="quiz__content">
+        <h2 class="question">
+          1. The CSS property used to control the element’s font-size
+          is__________
+        </h2>
+        <ul>
+          <li>
+            <input type="radio" name="answer" id="a" class="answer" />
+            <label for="a" id="a__text">font-size</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="b" class="answer" />
+            <label for="b" id="b__text">text-size</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="c" class="answer" />
+            <label for="c" id="c__text">text-style</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="d" class="answer" />
+            <label for="d" id="d__text">None</label>
+          </li>
+        </ul>
+      </div>
+      <button class="btn" id="submit">Submit</button>
+    </div>
+  </body>
+</html>
