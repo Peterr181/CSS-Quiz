@@ -1,5 +1,5 @@
 # CSS-Quiz
-Simple quiz made using JS html and css.
+Simple quiz made using JS html and css without API.
 
 Loading screen
 ![obraz](https://user-images.githubusercontent.com/102172769/195218652-d86a90b7-9b86-45e9-85e9-d1f7d58d5fd6.png)
